@@ -13,7 +13,7 @@ class Managarr < Formula
     url "https://github.com/Dark-Alex-17/managarr/releases/download/v0.4.1/managarr-linux-musl.tar.gz"
     sha256 "45cf1e06daf56bfc055876b51bd837716b2ea788898b5accc2f6847af4275011"
   end
-  version "v0.4.1"
+  version "0.4.1"
   license "MIT"
 
   def install
