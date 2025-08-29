@@ -17,7 +17,8 @@ jobs:
           /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
           (echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> /home/runner/.bash_profile
           eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-          brew install --build-bottle --verbose Formula/managarr.rb
+          brew tap dark-alex-17/managarr $(pwd)
+          brew install --build-bottle --verbose managarr
           managarr -h
       - name: Build and release MacOS Managarr Tap
         if: matrix.runs-on == 'macOS-latest'
@@ -26,5 +27,6 @@ jobs:
           /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
           (echo; echo 'eval "$(/usr/local/bin/brew shellenv)"') >> /Users/runner/.bash_profile
           eval "$(/usr/local/bin/brew shellenv)"
-          brew install --build-bottle --verbose Formula/managarr.rb
+          brew tap dark-alex-17/managarr $(pwd)
+          brew install --build-bottle --verbose managarr
           managarr -h
