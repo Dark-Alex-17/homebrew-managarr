@@ -4,16 +4,16 @@ class Managarr < Formula
   desc "Managarr is a TUI and CLI to help you manage your HTPC (Home Theater PC)"
   homepage "https://github.com/Dark-Alex-17/managarr"
   if OS.mac? and Hardware::CPU.arm?
-    url "https://github.com/Dark-Alex-17/managarr/releases/download/v0.8.0/managarr-macos-arm64.tar.gz"
-    sha256 "b86a1b06c22ef3bc6bef6521ad04d3340340c49b6b1f52cff61d1b851c0c5dc9"
+    url "https://github.com/Dark-Alex-17/managarr/releases/download/v0.8.1/managarr-macos-arm64.tar.gz"
+    sha256 "2cff082660d20a0eb2d2179ddaf49ebec491e7055975abf001ad4951587b3939"
   elsif OS.mac? and Hardware::CPU.intel?
-    url "https://github.com/Dark-Alex-17/managarr/releases/download/v0.8.0/managarr-macos.tar.gz"
-    sha256 "3ed463e230692856b48e40096794f15972974d222ab633e679620ee4fe5c2c48"
+    url "https://github.com/Dark-Alex-17/managarr/releases/download/v0.8.1/managarr-macos.tar.gz"
+    sha256 "128c382047c14223026474f6fc14800994bbef1579fc3a42c3ef9a1af034d81e"
   else
-    url "https://github.com/Dark-Alex-17/managarr/releases/download/v0.8.0/managarr-linux-musl.tar.gz"
-    sha256 "c07c5d7e2fa8bbd810a8816c1d5020a5a2ee0b75a54ec9f83e9f29f8baa1b72e"
+    url "https://github.com/Dark-Alex-17/managarr/releases/download/v0.8.1/managarr-linux-musl.tar.gz"
+    sha256 "2e570c5324e4f68c85a43b405dadf94da1020642221418135fdf3216fc8fb438"
   end
-  version "0.8.0"
+  version "0.8.1"
   license "MIT"
 
   def install
